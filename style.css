@@ -1,0 +1,11 @@
+*
+{
+    box-sizing: border-box;
+}
+p{
+    color: blue;
+}
+p::first-letter{
+    color: red;
+    font-style: italic;
+}
