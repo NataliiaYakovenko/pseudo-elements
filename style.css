@@ -5,15 +5,35 @@
 p{
     color: gray;
     cursor: crosshair;
+    font-size: 20px;
+    border: 1px solid black;
+    position: relative;
+
 }
-p::first-letter{
+p::before{
+   content: "♥";
+   color: red;
+   background-color: pink;
+   border-radius: 50%;
+   object-fit: cover;
+   position: absolute;
+   top: 5px;
+   left: 10px;
+   opacity: 0.2;/*прозорість псевдоелемента*/
+   
+
+}
+p::after{
+    content: "♥";
     color: red;
-    font-style: italic;
-}
-p::first-line{
-   background-color: darksalmon;
-}
-p::selection{
-    color: blue;
-    background-color: yellow;
-}
+    background-color: pink;
+    display: inline-block;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    opacity: 0.2;/*прозорість псевдоелемента*/
+   
+ 
+ }
