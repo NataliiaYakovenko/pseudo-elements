@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 p{
-    color: blue;
+    color: gray;
+    cursor: crosshair;
 }
 p::first-letter{
     color: red;
@@ -11,4 +12,8 @@ p::first-letter{
 }
 p::first-line{
    background-color: darksalmon;
+}
+p::selection{
+    color: blue;
+    background-color: yellow;
 }
