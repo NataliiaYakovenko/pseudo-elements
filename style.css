@@ -2,6 +2,44 @@
 {
     box-sizing: border-box;
 }
+
+p{
+    color: blue;
+    position: relative;
+}
+p::first-letter{
+    font-style:italic;
+    font-family: cursive;
+}
+p::first-line{
+    background-color: rgb(192, 179, 205);
+}
+p::before{
+    content: "“";
+    position: absolute;
+    top: -10px;
+}
+p::after{
+    content: "”";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 p{
     color: gray;
     cursor: crosshair;
@@ -21,7 +59,7 @@ p::before{
    left: 10px;
    opacity: 0.2;/*прозорість псевдоелемента*/
    
-
+/*
 }
 p::after{
     content: "♥";
@@ -35,5 +73,5 @@ p::after{
     right: 10px;
     opacity: 0.2;/*прозорість псевдоелемента*/
    
- 
+ /*
  }
